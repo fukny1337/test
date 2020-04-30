@@ -1,0 +1,270 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#main-nav a{
+    color: #CB444B;
+    background: black;
+    display: block;
+    height: 64px;
+    font-family: Roboto;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.4s;
+}
+
+#main-nav a:hover{
+    background: #f3f3f3;
+}
+
+#main-nav ul{
+    list-style: none;
+    display: flex;
+
+}
+
+#main-nav li{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#main-nav li:hover .submenu > li{
+    display: block;
+    top: 0px;
+}
+
+.submenu li{
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+
+.submenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+
+.submenu li{
+    position: relative;
+}
+
+.submenu li:hover .submenu-2 li{
+    display: block;
+}
+
+.submenu-2 li{
+    display: none;
+}
+
+.submenu-2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 120px;
+}
+
+#main-nav ul li i{
+    padding: 8px;
+    color: #11DD9F;
+}
+
+.glowna{
+    background-color: #2e2e2e;
+}
+
+.glowna h1{
+    font-family: Anton;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 100px;
+    color: #CB444B;
+    margin: 25px 0px 0px 0px;
+}
+
+.glowna hr.jeden {
+    background-color: #11DD9F;
+    color: #11DD9F;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 5px;
+    border: none;
+}
+
+.glowna p{
+    font-family: anton;
+    color: #CB444B;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.podstrona{
+    background-color: #2e2e2e;
+    color: #CB444B;
+}
+
+.podstrona h1 {
+    font-family: anton;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.podstrona hr.two {
+    background-color: #11DD9F;
+    color: #11DD9F;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 5px;
+    border: none;
+}
+
+ .podstrona .nazwa p{
+    color: #CB444B;
+    font-family: 'Yanone Kaffeesatz';
+    padding: 25px 100px 0px 100px;
+    font-size: 30px;
+}
+
+.podstrona h5 {
+    font-family: anton;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+.podstrona .connect{
+    overflow:hidden;
+    width: 100%;
+}
+
+.podstrona .nazwa2 p{
+    color: #CB444B;
+    font-family: 'Yanone Kaffeesatz';
+    float: left;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+    width: 50%;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 20px;
+    padding-top: 25px;
+}
+
+.podstrona .nazwa3 p{
+    color: #CB444B;
+    font-family: 'Yanone Kaffeesatz';
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+    width: 50%;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-right: 100px;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.contener{
+    width: 640px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contener .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.contener .box .imgBox{
+    position: relative;
+    overflow:hidden;
+}
+
+.contener .box .imgBox img{
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+.contener .box .imgBox:hover img{
+    transform: scale(1.2);
+}
+
+.contener .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, .8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+.contener .box:hover .details{
+    transform: scaleY(1);
+}
+
+.contener .box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.contener .box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Yanone Kaffeesatz';
+    color: #ff0;
+}
+
+.contener .box .details .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #fff;
+}
+
+.pic img{
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+}
+
+.pic:hover img{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
